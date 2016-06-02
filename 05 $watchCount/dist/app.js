@@ -1,0 +1,1 @@
+!function(){var n=angular.module("myApp",[]);n.run(function(n){console.log("run")})}();

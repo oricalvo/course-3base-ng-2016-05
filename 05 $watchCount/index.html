@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-strict-di>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <span>{{counter}}</span>
+
+        <span ng-bind="counter"></span>
+
+        <input ng-model="counter" />
+
+        <button ng-click="toggle()">Toggle</button>
+
+        <div ng-show="showList" ng-repeat="num in nums">
+            <span>{{num}}</span>
+            <input />
+        </div>
+
+        <button ng-click="inc()">Inc</button>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <!--<script src="HomeCtrl.js"></script>-->
+    <script src="dist/HomeCtrl.js"></script>
+</body>
+</html>

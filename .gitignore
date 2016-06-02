@@ -1,0 +1,8 @@
+node_modules
+.idea
+bower_components
+node_modules
+packages
+.vs
+bin
+obj

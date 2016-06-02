@@ -1,0 +1,1 @@
+!function(){function o(o,n,t,e,c){c.counter=0,c.blabla=[],c.nums=[1,2,3],c.toggle=function(){c.showList=!c.showList},c.inc=function(){c.counter++,console.log(e.$$watchersCount)},setInterval(function(){++c.counter,c.$apply()},1e3)}angular.module("myApp").controller("HomeCtrl",["$q","$http","$interval","$rootScope","$scope",o])}();

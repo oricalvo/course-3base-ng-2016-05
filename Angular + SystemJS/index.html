@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link href="HomeCtrl.css" rel="stylesheet"/>-->
+</head>
+<body>
+    <div ng-controller="HomeCtrl" class="home">
+        <span>{{message}}</span>
+
+        <button>Click me</button>
+    </div>
+
+    <div ng-controller="SecondCtrl">
+        <span>{{message}}</span>
+    </div>
+
+    <script src="system.src.js"></script>
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+        });
+        System.import("main");
+    </script>
+</body>
+</html>

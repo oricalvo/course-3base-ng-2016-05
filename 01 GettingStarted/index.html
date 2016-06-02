@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <h1>Contacts</h1>
+
+        <ul>
+            <li ng-repeat="contact in contacts">
+                <span>{{contact.name}}</span>
+                <button ng-click="remove(contact, $index)">Delete</button>
+            </li>
+        </ul>
+
+        <input ng-model="newName" />
+        <button ng-click="add()">Add</button>
+
+        <div ng-controller="SecondCtrl">
+            <span>{{message}}</span>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
