@@ -1,0 +1,19 @@
+<h1>Home</h1>
+
+<button ng-click="$ctrl.logout()">Logout</button>
+
+<contact-list
+        component-name="contactList1"
+        contacts="$ctrl.contacts1"
+        on-delete-contact="$ctrl.onDeleteContact1(index)">
+</contact-list>
+
+<button ng-click="$ctrl.destroyContactList()">Destroy</button>
+
+<contact-list
+        component-name="contactList2"
+        contacts="$ctrl.contacts2"
+        on-delete-contact="$ctrl.onDeleteContact2(index)">
+</contact-list>
+
+<input ng-model="$ctrl.name" /><button ng-click="$ctrl.add()">Add</button>
